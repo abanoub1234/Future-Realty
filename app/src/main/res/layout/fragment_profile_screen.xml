@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundd"
+    tools:context=".ProfileScreen">
+
+
+
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:backgroundTint="#e8e8e8"
+        android:foregroundGravity="center"
+        android:drawableBottom="@drawable/logout">
+
+    </Button>
+
+    <include
+        android:layout_marginTop="@dimen/_40sdp"
+        layout="@layout/item_image"
+        style="@style/Circular"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_183sdp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/item_add"/>
+            <include layout="@layout/item_info"/>
+            <include layout="@layout/item_email"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+

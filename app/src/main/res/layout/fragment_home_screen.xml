@@ -6,7 +6,41 @@
     android:background="#f2e82d"
     tools:context=".HomeScreen">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/profile_btn"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:drawableBottom="@drawable/user"
+        android:gravity="center"
+        android:layout_gravity="start"
+        android:backgroundTint="#f2e82d">
+    </Button>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/favorite_btn"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:backgroundTint="#f2e82d"
+        android:drawableBottom="@drawable/favorite"
+        android:layout_gravity="end"
+        android:gravity="center"></Button>
+
+
+</LinearLayout>
+
+
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_70sdp"
         android:id="@+id/HomeRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
