@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="#f2e82d"
     tools:context=".DetailsScreen">
 
 
@@ -94,8 +95,10 @@
 
                     <ImageView
                         android:layout_width="@dimen/_140sdp"
-                        android:layout_height="@dimen/_75sdp"
-                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
                         android:scaleType="fitXY"
                         android:src="@drawable/house">
 
@@ -103,7 +106,7 @@
 
                     <ImageView
                         android:layout_width="@dimen/_140sdp"
-                        android:layout_height="@dimen/_75sdp"
+                        android:layout_height="@dimen/_85sdp"
                         android:layout_margin="@dimen/_10sdp"
                         android:scaleType="fitXY"
                         android:src="@drawable/house">
@@ -250,7 +253,7 @@
                         android:layout_height="wrap_content"
                         android:foregroundGravity="center"
                         app:backgroundTint="@null"
-                        android:background="@color/white"
+                        android:background="#f2e82d"
                         android:drawableBottom="@drawable/baseline_add_location_alt_24">
 
                     </Button>
