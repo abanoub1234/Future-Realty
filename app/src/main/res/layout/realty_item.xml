@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:background="#f2e82d">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2e82d"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/titleImage"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:adjustViewBounds="true"
+        android:background="#f2e82d"
+        android:scaleType="centerCrop"
+        android:src="@drawable/house_item"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/textPrice"
+            android:text="price"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="description"
+            android:id="@+id/texthint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="location"
+            android:id="@+id/textlocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:drawableLeft="@drawable/whatsapp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:id="@+id/whatsappBtn"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WhatsApp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+
+        android:backgroundTint="#54ac41"
+        />
+    <Button
+        android:drawableLeft="@drawable/call"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:id="@+id/callUSBtn"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call us"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+
+        android:backgroundTint="#54ac41"
+        />
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="4dp"
+    android:layout_marginTop="@dimen/_200sdp"
+    android:background="#0E0B0B"/>
+
+</androidx.cardview.widget.CardView>
