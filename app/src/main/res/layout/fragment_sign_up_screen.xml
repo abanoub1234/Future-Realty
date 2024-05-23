@@ -64,20 +64,7 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:hint="Confirm Password">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirmPassEDT"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_16ssp"
-            android:background="@drawable/custom_edit_text_rounded"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -94,12 +81,33 @@
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <RadioGroup
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller"
+            android:textSize="@dimen/_20ssp"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:textSize="@dimen/_20ssp">
+        </RadioButton>
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_25sdp"
         android:text="Register"
         android:backgroundTint="#54ac41"
         android:textSize="20dp" />

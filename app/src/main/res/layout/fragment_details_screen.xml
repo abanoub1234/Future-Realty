@@ -152,7 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_20sdp"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:text="Floor  "
+                        android:text="Price  "
                         android:textColor="@color/black"
                         android:textSize="@dimen/_15ssp"
                         android:textStyle="normal">
@@ -164,7 +164,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_20sdp"
                         android:layout_marginTop="@dimen/_20sdp"
-                        android:text="Overlooking   "
+                        android:text="Information   "
                         android:textColor="@color/black"
                         android:textSize="@dimen/_15ssp"
                         android:textStyle="normal">
@@ -177,7 +177,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_20sdp"
                         android:layout_marginTop="@dimen/_20sdp"
-                        android:text="price of one  meter   "
+                        android:text="contacts   "
                         android:textColor="@color/black"
                         android:textSize="@dimen/_15ssp"
                         android:textStyle="normal">
@@ -226,7 +226,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/_20sdp"
-                        android:text="Overlooking the sea  "
+                        android:text="Info about Realty "
                         android:textColor="@color/black"
                         android:textSize="@dimen/_15ssp"
                         android:textStyle="normal">
@@ -239,12 +239,13 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/_20sdp"
-                        android:text=" 140,511 pounds meter  "
+                        android:text="Phone number"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_14ssp"
                         android:textStyle="normal">
 
                     </TextView>
+
                     <Button
                         android:id="@+id/btn_Location"
                         android:layout_marginStart="@dimen/_25sdp"
