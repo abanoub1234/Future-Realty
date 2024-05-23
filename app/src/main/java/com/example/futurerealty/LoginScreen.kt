@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.commit
 
 
 class LoginScreen : Fragment()
@@ -20,6 +22,30 @@ class LoginScreen : Fragment()
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_login_screen, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?)
+    {
+        super.onViewCreated(view, savedInstanceState)
+
+        view.findViewById<Button>(R.id.login_btn).setOnClickListener {
+            parentFragmentManager.commit {
+                setReorderingAllowed(true)
+                replace(R.id.fragmentContainer, HomeScreen())
+                addToBackStack(null)
+            }
+        }
+
+
+        view.findViewById<Button>(R.id.signup_btn).setOnClickListener {
+            parentFragmentManager.commit {
+                setReorderingAllowed(true)
+                replace(R.id.fragmentContainer, SignUpScreen())
+                addToBackStack(null)
+            }
+        }
+
+
     }
 
 

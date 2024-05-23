@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.fragment.app.commit
 
 
 class HomeScreen : Fragment() {
@@ -20,6 +22,30 @@ class HomeScreen : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_screen, container, false)
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?)
+    {
+        super.onViewCreated(view, savedInstanceState)
+
+        /*view.findViewById<Button>(R.id.profile_btn).setOnClickListener {
+            parentFragmentManager.commit {
+                setReorderingAllowed(true)
+                replace(R.id.fragmentContainer, ProfileScreen())
+                addToBackStack(null)
+            }
+        }*/
+
+
+        view.findViewById<Button>(R.id.favorite_btn).setOnClickListener {
+            parentFragmentManager.commit {
+                setReorderingAllowed(true)
+                replace(R.id.fragmentContainer, FavoritScreen())
+                addToBackStack(null)
+            }
+        }
+
     }
 
 
