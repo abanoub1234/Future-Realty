@@ -25,6 +25,12 @@
         <action
             android:id="@+id/action_homeScreen_to_profileScreen"
             app:destination="@id/profileScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_aaddCommercial"
+            app:destination="@id/aaddCommercial" />
+        <action
+            android:id="@+id/action_homeScreen_to_detailsScreen"
+            app:destination="@id/detailsScreen" />
     </fragment>
     <fragment
         android:id="@+id/loginScreen"
@@ -64,5 +70,23 @@
         <action
             android:id="@+id/action_profileScreen_to_loginScreen"
             app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/aaddCommercial"
+        android:name="com.example.futurerealty.AaddCommercial"
+        android:label="fragment_aadd_commercial"
+        tools:layout="@layout/fragment_aadd_commercial" >
+        <action
+            android:id="@+id/action_aaddCommercial_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsScreen"
+        android:name="com.example.futurerealty.DetailsScreen"
+        android:label="fragment_details_screen"
+        tools:layout="@layout/fragment_details_screen" >
+        <action
+            android:id="@+id/action_detailsScreen_to_homeScreen"
+            app:destination="@id/homeScreen" />
     </fragment>
 </navigation>

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.commit
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class HomeScreen : Fragment() {
@@ -44,6 +45,17 @@ class HomeScreen : Fragment() {
                 replace(R.id.fragmentContainer, FavoritScreen())
                 addToBackStack(null)
             }
+        }
+
+
+        view.findViewById<FloatingActionButton>(R.id.addBtnFab).setOnClickListener{
+
+            parentFragmentManager.commit {
+                setReorderingAllowed(true)
+                replace(R.id.fragmentContainer, AaddCommercial())
+                addToBackStack(null)
+            }
+
         }
 
     }
