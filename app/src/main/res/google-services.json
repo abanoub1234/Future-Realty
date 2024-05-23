@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483936470210",
+    "project_id": "future-realty",
+    "storage_bucket": "future-realty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483936470210:android:d3e10a3789bcc401b7e75b",
+        "android_client_info": {
+          "package_name": "com.example.futurerealty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa5Qo6eFOMWDS_tluz3SP9JXOAnGDc7wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
