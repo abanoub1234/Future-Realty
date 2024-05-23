@@ -32,7 +32,7 @@ class AaddCommercial : Fragment() {
         view.findViewById<Button>(R.id.addComercialBTN).setOnClickListener {
             parentFragmentManager.commit {
                 setReorderingAllowed(true)
-                replace(R.id.fragmentContainer, AaddCommercial())
+                replace(R.id.fragmentContainer, HomeScreen())
                 addToBackStack(null)
             }
         }
