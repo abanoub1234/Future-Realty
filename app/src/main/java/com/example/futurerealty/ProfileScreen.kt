@@ -9,7 +9,8 @@ import android.widget.Button
 import androidx.fragment.app.commit
 
 
-class HomeScreen : Fragment() {
+class ProfileScreen : Fragment()
+{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +22,7 @@ class HomeScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_screen, container, false)
+        return inflater.inflate(R.layout.fragment_profile_screen, container, false)
     }
 
 
@@ -29,24 +30,15 @@ class HomeScreen : Fragment() {
     {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.profile_btn).setOnClickListener {
+        view.findViewById<Button>(R.id.logoutBtn).setOnClickListener {
             parentFragmentManager.commit {
                 setReorderingAllowed(true)
-                replace(R.id.fragmentContainer, ProfileScreen())
+                replace(R.id.fragmentContainer, LoginScreen())
                 addToBackStack(null)
             }
         }
-
-
-        view.findViewById<Button>(R.id.favorite_btn).setOnClickListener {
-            parentFragmentManager.commit {
-                setReorderingAllowed(true)
-                replace(R.id.fragmentContainer, FavoritScreen())
-                addToBackStack(null)
-            }
-        }
-
     }
+
 
 
 
