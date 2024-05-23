@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AaddCommercial"
+    android:orientation="vertical"
+    android:background="#f2e82d"
+    >
+    <ImageView
+       android:background="#676a3c"
+        android:id="@+id/AddImage"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:src="@drawable/house6"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="Price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addPriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/custom_edit_text_rounded"
+            android:drawableStart="@drawable/price"
+            android:drawablePadding="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"></com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="Informations">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AddDetailsEditText"
+            android:drawableStart="@drawable/information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textSize="@dimen/_18ssp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edit_text_rounded"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="Location">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addLocationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textSize="@dimen/_18ssp"
+            android:drawableStart="@drawable/location"
+            android:drawablePadding="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edit_text_rounded"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:hint="Contacts">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addContactsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textSize="@dimen/_18ssp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:drawableStart="@drawable/call_svgrepo_com"
+
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edit_text_rounded"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addComercialBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Add Realty "
+        android:backgroundTint="#54ac41"
+        android:textSize="20dp" />
+
+
+</LinearLayout>

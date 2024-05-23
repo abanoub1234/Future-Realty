@@ -91,7 +91,7 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_15sdp"
-        android:text="Login "
+        android:text="Login"
         android:backgroundTint="#54ac41"
         android:textSize="20dp" />
 
