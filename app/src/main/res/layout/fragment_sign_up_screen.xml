@@ -81,7 +81,9 @@
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--
     <RadioGroup
+        android:id="@+id/radiogroup"
         android:layout_marginTop="@dimen/_15sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,12 +91,14 @@
         >
 
         <RadioButton
+            android:id="@+id/RBseller"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Seller"
             android:textSize="@dimen/_20ssp"></RadioButton>
 
         <RadioButton
+            android:id="@+id/RBcustomer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Customer"
@@ -102,6 +106,7 @@
         </RadioButton>
 
     </RadioGroup>
+    !-->
 
     <Button
         android:id="@+id/register_btn"

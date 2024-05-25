@@ -52,6 +52,7 @@
         android:textSize="@dimen/_16ssp"
         android:textColor="@color/black"
         android:drawablePadding="12dp"
+        android:inputType="textPassword"
         android:background="@drawable/custom_edit_text_rounded"
         android:drawableStart="@drawable/custom_vpn_icon"
         android:layout_marginTop="@dimen/_30sdp"
@@ -62,6 +63,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!--
     <RadioGroup
         android:layout_marginTop="@dimen/_15sdp"
         android:layout_width="wrap_content"
@@ -69,7 +71,7 @@
         android:orientation="horizontal"
         >
 
-        <RadioButton
+       <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Seller"
@@ -82,7 +84,7 @@
             android:textSize="@dimen/_20ssp">
         </RadioButton>
 
-    </RadioGroup>
+    </RadioGroup> !-->
 
     <Button
         android:id="@+id/login_btn"
@@ -90,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:text="Login"
         android:backgroundTint="#54ac41"
         android:textSize="20dp" />

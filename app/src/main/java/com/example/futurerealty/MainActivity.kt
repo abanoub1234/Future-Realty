@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity()
         {
                 supportFragmentManager.commit{
                 setReorderingAllowed(true)
-                add(R.id.fragmentContainer, SplashScreen())
+                add(R.id.fragmentContainer, LoginScreen())
             }
         }
 

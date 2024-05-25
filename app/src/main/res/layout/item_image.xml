@@ -25,6 +25,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/ProfileNameTxtView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_30sdp"
@@ -48,6 +49,7 @@
 
     </RelativeLayout>
     <ImageView
+        android:id="@+id/ProfileImageView"
         android:src="@drawable/aba"
         app:shapeAppearanceOverlay="@style/Circular"
         android:elevation="@dimen/_15sdp"

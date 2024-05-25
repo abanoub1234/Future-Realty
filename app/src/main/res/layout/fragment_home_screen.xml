@@ -15,7 +15,7 @@
         android:id="@+id/profile_btn"
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
-        android:drawableBottom="@drawable/user"
+        android:drawableBottom="@drawable/user2"
         android:gravity="center"
         android:layout_gravity="start"
         android:backgroundTint="#f2e82d">

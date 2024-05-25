@@ -37,7 +37,7 @@
 
         </LinearLayout>
         <TextView
-            android:id="@+id/email_view"
+            android:id="@+id/ProfileEmailTxtView"
             android:text="malakinfoapp@gmail.com"
             android:textStyle="bold"
             android:textColor="#ED5E5E5E"
