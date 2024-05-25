@@ -123,18 +123,33 @@ class HomeScreen : Fragment() , RealtyAdapter.OnItemClickListener
         })
     }
 
-    override fun onItemClick(realtyData: realityData, position: Int)
-    {
+    override fun onItemClick(realtyData: realityData) {
+        val bundle = Bundle()
+        bundle.putParcelable("realtyData", realtyData)
 
-        parentFragmentManager.commit {
-            setReorderingAllowed(true)
-            replace(R.id.fragmentContainer, DetailsScreen())
-            addToBackStack(null)
-        }
+        val detailsFragment = DetailsScreen()
+        detailsFragment.arguments = bundle
+
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, detailsFragment)
+            .addToBackStack(null)
+            .commit()
     }
 
 
+    /* override fun onItemClick(realtyData: realityData, position: Int)
+     {
+
+         parentFragmentManager.commit {
+             setReorderingAllowed(true)
+             replace(R.id.fragmentContainer, DetailsScreen())
+             addToBackStack(null)
+         }
+     }*/
+
+
 }
+
 
 
 

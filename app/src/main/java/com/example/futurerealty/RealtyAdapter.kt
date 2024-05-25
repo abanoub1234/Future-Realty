@@ -15,8 +15,9 @@ class RealtyAdapter( private val realtyList:ArrayList<realityData> , private val
 {
 
     interface OnItemClickListener {
-        fun onItemClick(realtyData: realityData , position: Int)
+        fun onItemClick(realtyData: realityData)
     }
+
 
 
 
@@ -68,7 +69,7 @@ class RealtyAdapter( private val realtyList:ArrayList<realityData> , private val
 
 
         holder.itemView.setOnClickListener {
-            onItemClickListener.onItemClick(currentItem , position)
+            onItemClickListener.onItemClick(currentItem )
         }
 
     }

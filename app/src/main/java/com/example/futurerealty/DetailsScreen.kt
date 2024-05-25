@@ -51,7 +51,36 @@ class DetailsScreen : Fragment()
         infoTxt = view.findViewById(R.id.DetailsInfoTxtView)
         contactTxt = view.findViewById(R.id.DetailsPhoneTxtView)
 
-        databaseRef = FirebaseDatabase.getInstance().getReference("Realty")
+
+
+        val realtyData = arguments?.getParcelable<realityData>("realtyData")
+        realtyData?.let {
+            priceTxt.text=it.price.toString()
+            infoTxt.text=it.description.toString()
+            contactTxt.text=it.contact.toString()
+            Picasso.get().load(it.imageUrl).into(imageView1)
+            Picasso.get().load(it.imageUrl).into(imageView2)
+            Picasso.get().load(it.imageUrl).into(imageView3)
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       /* databaseRef = FirebaseDatabase.getInstance().getReference("Realty")
 
         databaseRef.addValueEventListener(object : ValueEventListener
         {
@@ -79,7 +108,7 @@ class DetailsScreen : Fragment()
             {
 
             }
-        })
+        })*/
 
 
 
