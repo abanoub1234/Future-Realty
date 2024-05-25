@@ -120,19 +120,42 @@
 
 
             </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="2">
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Advertisement details"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold">
+
+    </TextView>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:text="Advertisement details"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_20ssp"
-                android:textStyle="bold">
+    <Button
+        android:id="@+id/addToFavoriteBtn"
+        android:layout_weight="1"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:backgroundTint="#f2e82d"
+        android:drawableBottom="@drawable/favorite"
+        >
 
-            </TextView>
+    </Button>
+</LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -143,7 +166,7 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_200sdp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -205,7 +228,7 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_200sdp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -251,9 +274,9 @@
                     <Button
                         android:id="@+id/btn_Location"
                         android:layout_marginStart="@dimen/_25sdp"
-                        android:layout_marginTop="@dimen/_20sdp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
                         android:foregroundGravity="center"
                         app:backgroundTint="@null"
                         android:background="#f2e82d"

@@ -50,8 +50,10 @@ class ProfileScreen : Fragment() {
             database = FirebaseDatabase.getInstance().getReference("users").child(uid)
 
             database.addListenerForSingleValueEvent(object : ValueEventListener {
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    if (snapshot.exists()) {
+                override fun onDataChange(snapshot: DataSnapshot)
+                {
+                    if (snapshot.exists())
+                    {
                         Toast.makeText(requireContext(), "User data found", Toast.LENGTH_SHORT).show()
                         val userProfile = snapshot.getValue(user::class.java)
                         userProfile?.let { user ->

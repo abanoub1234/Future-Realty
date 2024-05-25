@@ -10,6 +10,8 @@ data class realityData(
     var location: String? = "",
     var contact: String? = ""
 ): Parcelable {
+    constructor() : this("", "", "", "", "")
+
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
         parcel.readString() ?: "",

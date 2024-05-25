@@ -19,7 +19,6 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-// Your other imports
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
