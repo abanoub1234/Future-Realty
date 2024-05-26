@@ -3,40 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f2e82d"
+    android:background="#FFFAF0"
     tools:context=".HomeScreen">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/profile_btn"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:drawableBottom="@drawable/user2"
-        android:gravity="center"
-        android:layout_gravity="start"
-        android:backgroundTint="#f2e82d">
-    </Button>
+        <Button
+            android:id="@+id/profile_btn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:drawableBottom="@drawable/user"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FFFAF0">
+        </Button>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/favorite_btn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:backgroundTint="#FFFAF0"
+            android:drawableBottom="@drawable/favorite"
+            android:layout_gravity="end"
+            android:gravity="center"></Button>
+    </LinearLayout>
 
     <View
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-
-    <Button
-        android:id="@+id/favorite_btn"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:backgroundTint="#f2e82d"
-        android:drawableBottom="@drawable/favorite"
-        android:layout_gravity="end"
-        android:gravity="center"></Button>
-
-
-</LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#54ac41"
+        android:layout_marginTop="@dimen/_48sdp"/>
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -56,4 +62,10 @@
         android:backgroundTint="#54ac41"
         android:src="@drawable/ic_add" />
 
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
 </FrameLayout>

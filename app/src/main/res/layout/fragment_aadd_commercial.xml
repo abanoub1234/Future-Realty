@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f2e82d"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFAF0"
     android:orientation="vertical"
     tools:context=".AaddCommercial">
 
@@ -13,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_170sdp"
         android:layout_margin="@dimen/_5sdp"
-        android:background="#676a3c"
+        android:background="#B2DFDB"
         android:scaleType="fitXY"
         android:src="@drawable/house6" />
 
@@ -21,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_15sdp"
+        app:hintTextColor="#00796B"
         android:hint="Price">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -33,8 +35,8 @@
             android:background="@drawable/custom_edit_text_rounded"
             android:drawableStart="@drawable/price"
             android:drawablePadding="@dimen/_12sdp"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_18ssp"></com.google.android.material.textfield.TextInputEditText>
+            android:textColor="#00796B"
+            android:textSize="@dimen/_16ssp"></com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -42,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_15sdp"
+        app:hintTextColor="#00796B"
         android:hint="Informations">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -54,14 +57,15 @@
             android:background="@drawable/custom_edit_text_rounded"
             android:drawableStart="@drawable/information"
             android:drawablePadding="@dimen/_12sdp"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_18ssp"></com.google.android.material.textfield.TextInputEditText>
+            android:textColor="#00796B"
+            android:textSize="@dimen/_16ssp"></com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:hintTextColor="#00796B"
         android:layout_marginTop="@dimen/_15sdp"
         android:hint="Location">
 
@@ -75,14 +79,15 @@
             android:background="@drawable/custom_edit_text_rounded"
             android:drawableStart="@drawable/location"
             android:drawablePadding="@dimen/_12sdp"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_18ssp"></com.google.android.material.textfield.TextInputEditText>
+            android:textColor="#00796B"
+            android:textSize="@dimen/_16ssp"></com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:hintTextColor="#00796B"
         android:layout_marginTop="@dimen/_15sdp"
         android:hint="Contacts">
 
@@ -94,12 +99,11 @@
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:background="@drawable/custom_edit_text_rounded"
-
             android:drawableStart="@drawable/call_svgrepo_com"
             android:drawablePadding="@dimen/_12sdp"
             android:inputType="phone"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_18ssp"></com.google.android.material.textfield.TextInputEditText>
+            android:textColor="#00796B"
+            android:textSize="@dimen/_16ssp"></com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -109,9 +113,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         android:backgroundTint="#54ac41"
+        android:textColor="#FFFFFF"
         android:text="Add Realty "
         android:textSize="20dp" />
 

@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#f2e82d"
+    android:background="#FFFAF0"
     tools:context=".SignUpScreen">
 
     <ImageView
@@ -26,9 +26,11 @@
             android:id="@+id/userEDT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:startIconDrawable="@drawable/user"
+            android:drawableLeft="@drawable/user2"
             android:textSize="@dimen/_16ssp"
             android:drawablePadding="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             android:background="@drawable/custom_edit_text_rounded"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -45,6 +47,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/_16ssp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:drawableLeft = "@drawable/ic_email"
             android:background="@drawable/custom_edit_text_rounded"
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -60,6 +66,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/_16ssp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:drawableLeft = "@drawable/custom_vpn_icon"
             android:background="@drawable/custom_edit_text_rounded"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -77,6 +87,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/_16ssp"
+            android:drawablePadding="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_phone"
             android:background="@drawable/custom_edit_text_rounded"
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -112,8 +126,10 @@
         android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:text="Register"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
         android:backgroundTint="#54ac41"
         android:textSize="20dp" />
 

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ProgressBar
 import androidx.fragment.app.commit
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,6 +25,7 @@ class HomeScreen : Fragment() , RealtyAdapter.OnItemClickListener
     private lateinit var realtyRecyclerView: RecyclerView
     private lateinit var realtyArrayList: ArrayList<realityData>
     private lateinit var databaseRef: DatabaseReference
+    private lateinit var loadingProgressBar: ProgressBar
 
 
 
@@ -46,7 +48,10 @@ class HomeScreen : Fragment() , RealtyAdapter.OnItemClickListener
     {
         super.onViewCreated(view, savedInstanceState)
 
+
         realtyRecyclerView = view.findViewById(R.id.HomeRecyclerView)
+        loadingProgressBar = view.findViewById(R.id.loadingProgressBar)
+
         realtyRecyclerView.layoutManager = LinearLayoutManager(context)
         realtyRecyclerView.setHasFixedSize(true)
         realtyArrayList = arrayListOf()
@@ -57,7 +62,6 @@ class HomeScreen : Fragment() , RealtyAdapter.OnItemClickListener
         databaseRef = FirebaseDatabase.getInstance().getReference("Realty")
 
         fetchRealtyData()
-
 
 
 
@@ -97,6 +101,7 @@ class HomeScreen : Fragment() , RealtyAdapter.OnItemClickListener
 
     private fun fetchRealtyData()
     {
+        loadingProgressBar.visibility = View.VISIBLE
         databaseRef.addValueEventListener(object : ValueEventListener
         {
             override fun onDataChange(snapshot: DataSnapshot)
@@ -114,11 +119,12 @@ class HomeScreen : Fragment() , RealtyAdapter.OnItemClickListener
                     }
                     realtyAdapter.notifyDataSetChanged()
                 }
+                loadingProgressBar.visibility = View.GONE
             }
 
             override fun onCancelled(error: DatabaseError)
             {
-
+                loadingProgressBar.visibility = View.GONE
             }
         })
     }

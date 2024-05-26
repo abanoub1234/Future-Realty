@@ -67,6 +67,8 @@ dependencies {
     kapt ("androidx.room:room-compiler:2.3.0")
     implementation ("androidx.room:room-ktx:2.3.0")
 
+    implementation ("com.google.android.gms:play-services-auth:20.4.1")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

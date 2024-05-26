@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.commit
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -77,7 +78,7 @@ class ProfileScreen : Fragment() {
             parentFragmentManager.commit {
                 setReorderingAllowed(true)
                 replace(R.id.fragmentContainer, LoginScreen())
-                addToBackStack(null)
+                parentFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
             }
         }
     }

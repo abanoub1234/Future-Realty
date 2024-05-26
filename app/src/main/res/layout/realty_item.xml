@@ -6,19 +6,20 @@
     android:layout_marginTop="@dimen/_20sdp"
     android:layout_marginStart="@dimen/_10sdp"
     android:layout_marginEnd="@dimen/_10sdp"
-    android:background="#ffffff"
+    android:background="#FFFAF0"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_170sdp"
-        android:background="#ffffff"
+        android:background="#FFFAF0"
         app:cardCornerRadius="@dimen/_20sdp"
-        app:cardElevation="8dp">
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#B2DFDB"
             android:orientation="vertical">
 
             <LinearLayout
@@ -31,15 +32,15 @@
                     android:layout_width="@dimen/_150sdp"
                     android:layout_height="@dimen/_120sdp"
                     android:adjustViewBounds="true"
-                    android:background="#ffffff"
+                    android:background="#B2DFDB"
                     android:scaleType="fitXY"
                     android:src="@drawable/house_item" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="@dimen/_135sdp"
                     android:layout_height="@dimen/_120sdp"
                     android:orientation="vertical"
-                    android:background="#ffffff"
+                    android:background="#B2DFDB"
                     android:gravity="center">
 
                     <TextView
@@ -80,14 +81,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="#ffffff"
+                android:background="#B2DFDB"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_gravity="center"
+                android:layout_weight="2"
                 android:gravity="center">
 
                 <Button
                     android:id="@+id/whatsappBtn"
-                    android:layout_width="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_weight="1"
                     android:layout_marginStart="@dimen/_10sdp"
@@ -101,7 +103,7 @@
 
                 <Button
                     android:id="@+id/callUSBtn"
-                    android:layout_width="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_weight="1"
                     android:layout_marginStart="@dimen/_10sdp"

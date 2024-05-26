@@ -42,12 +42,12 @@ class RealtyAdapter( private val realtyList:ArrayList<realityData> , private val
     {
         val currentItem = realtyList[position]
         Picasso.get().load(currentItem.imageUrl).into(holder.titleImage)
-        holder.price.text = currentItem.price
+        holder.price.text = currentItem.price + " $"
         holder.details.text = currentItem.description
         holder.realtyLocation.text = currentItem.location
 
         holder.whatsappBtn.setOnClickListener {
-            val phoneNumber = currentItem.contact // Assuming you have a phoneNumber field in realityData
+            val phoneNumber = currentItem.contact
             val url = "https://api.whatsapp.com/send?phone=$phoneNumber"
             try {
                 val intent = Intent(Intent.ACTION_VIEW)

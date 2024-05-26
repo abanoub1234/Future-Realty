@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#f2e82d"
+    android:background="#FFFAF0"
     android:gravity="center"
     android:layout_gravity="center"
     tools:context=".LoginScreen">
@@ -20,7 +20,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:hint="Enter Your Email">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -113,6 +113,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="or"
+    android:textStyle="bold"
+    android:layout_marginTop="@dimen/_20sdp"
     android:textSize="@dimen/_25ssp">
 </TextView>
 
@@ -120,37 +122,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:background="#f2e82d"
+        android:background="#FFFAF0"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_weight="1">
 
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/login_with_google_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_50sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_weight="0.5"
-            android:backgroundTint="#54ac41"
-            android:drawableStart="@drawable/google_icon"
-            android:text="Google"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:backgroundTint="#FFFAF0"
+            android:drawableBottom="@drawable/google_icon" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:layout_weight="0.5"
             android:id="@+id/login_with_facebook_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:drawableStart="@drawable/facebook_logo"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:drawableBottom="@drawable/facebook_logo"
             android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:text="Facebook"
-            android:backgroundTint="#1877f2"
-            android:textSize="20dp" />
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:backgroundTint="#FFFAF0" />
 
     </LinearLayout>
 

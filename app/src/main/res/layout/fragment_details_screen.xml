@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#f2e82d"
+    android:background="#FFFAF0"
     tools:context=".DetailsScreen">
 
 
@@ -132,8 +132,9 @@
         android:layout_marginStart="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:text="Advertisement details"
+        android:maxLines="1"
         android:textColor="@color/black"
-        android:textSize="@dimen/_20ssp"
+        android:textSize="@dimen/_18ssp"
         android:textStyle="bold">
 
     </TextView>
@@ -148,7 +149,7 @@
         android:layout_marginTop="@dimen/_25sdp"
         android:textColor="@color/black"
         android:textSize="@dimen/_20ssp"
-        android:backgroundTint="#f2e82d"
+        android:backgroundTint="#FFFAF0"
         android:drawableBottom="@drawable/favorite"
         >
 
@@ -241,7 +242,7 @@
                         android:text="2"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_15ssp"
-                        android:textStyle="normal">
+                        android:textStyle="bold">
 
                     </TextView>
 
@@ -252,9 +253,11 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/_20sdp"
                         android:text="Info about Realty "
+                        android:maxLines="1"
+                        android:ellipsize="end"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_15ssp"
-                        android:textStyle="normal">
+                        android:textStyle="bold">
 
                     </TextView>
 
@@ -267,7 +270,9 @@
                         android:text="Phone number"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_14ssp"
-                        android:textStyle="normal">
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textStyle="bold">
 
                     </TextView>
 
@@ -279,7 +284,7 @@
                         android:layout_height="@dimen/_60sdp"
                         android:foregroundGravity="center"
                         app:backgroundTint="@null"
-                        android:background="#f2e82d"
+                        android:background="#FFFAF0"
                         android:drawableBottom="@drawable/baseline_add_location_alt_24">
 
                     </Button>
